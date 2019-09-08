@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Base View-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="BaseView" id="BYZ-38-t0r" customClass="BaseView" customModule="Homework_CommunicationPattern" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Favorite Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1WA-uX-JOQ">
+                                <rect key="frame" x="107" y="64" width="200" height="27.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="bcQ-O5-IN4">
+                                <rect key="frame" x="97" y="209" width="220" height="478"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p2z-UF-MwX">
+                                        <rect key="frame" x="35" y="0.0" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="0Xl-GI-dYy"/>
+                                            <constraint firstAttribute="height" constant="150" id="8sq-tL-4pW"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxm-0l-frW">
+                                        <rect key="frame" x="85" y="176" width="50" height="50"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S6r-bz-0KT">
+                                        <rect key="frame" x="0.0" y="252" width="220" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="220" id="vVQ-GR-gMt"/>
+                                            <constraint firstAttribute="height" constant="150" id="xYq-Tb-Rzq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zv8-vy-nnF">
+                                        <rect key="frame" x="85" y="428" width="50" height="50"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAH-CU-xka">
+                                <rect key="frame" x="40" y="794" width="334" height="38"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="Choose Your Favorite Food">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M7L-0p-WxP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bcQ-O5-IN4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8uU-mV-Y6h"/>
+                            <constraint firstItem="vAH-CU-xka" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Mtg-iN-jlh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vAH-CU-xka" secondAttribute="bottom" constant="30" id="Xph-Mp-CmP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vAH-CU-xka" secondAttribute="trailing" constant="40" id="YSC-Bq-g6I"/>
+                            <constraint firstItem="1WA-uX-JOQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="fHJ-ay-sOV"/>
+                            <constraint firstItem="1WA-uX-JOQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rAh-SK-OFK"/>
+                            <constraint firstItem="bcQ-O5-IN4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vof-ic-cJ7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="chooseButton" destination="vAH-CU-xka" id="fIj-Ly-jEY"/>
+                        <outlet property="drinkImage" destination="S6r-bz-0KT" id="jvo-1s-t4u"/>
+                        <outlet property="drinkName" destination="Zv8-vy-nnF" id="3Zt-kI-UTA"/>
+                        <outlet property="fruitImage" destination="p2z-UF-MwX" id="7RE-yX-sRa"/>
+                        <outlet property="fruitName" destination="oxm-0l-frW" id="b3y-Rh-tvZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="666.66666666666674" y="20.758928571428569"/>
+        </scene>
+        <!--Fruit View-->
+        <scene sceneID="3ht-Df-yGc">
+            <objects>
+                <viewController storyboardIdentifier="FruitView" id="G9t-jv-IAi" customClass="FruitView" customModule="Homework_CommunicationPattern" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1gr-mg-TkP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Fruit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbT-6b-wL0">
+                                <rect key="frame" x="99" y="114" width="216" height="31.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="X09-oE-vWX">
+                                <rect key="frame" x="132" y="280" width="150" height="336"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ik1-jj-Rxh">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="NCJ-v2-vbZ"/>
+                                            <constraint firstAttribute="width" constant="150" id="qwG-ev-7cP"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="apple1"/>
+                                        <connections>
+                                            <action selector="appButtonTapped:" destination="G9t-jv-IAi" eventType="touchUpInside" id="eCC-OT-nC9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNI-6o-q0r">
+                                        <rect key="frame" x="0.0" y="186" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="Vs1-jn-dhb"/>
+                                            <constraint firstAttribute="height" constant="150" id="jNb-EN-jeD"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="orange1"/>
+                                        <connections>
+                                            <action selector="orangeButtonTapped:" destination="G9t-jv-IAi" eventType="touchUpInside" id="yZm-r5-usa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pbT-6b-wL0" firstAttribute="centerX" secondItem="1gr-mg-TkP" secondAttribute="centerX" id="3eN-uP-Lht"/>
+                            <constraint firstItem="pbT-6b-wL0" firstAttribute="top" secondItem="sBZ-Pq-7um" secondAttribute="top" constant="70" id="Pq8-sb-pv7"/>
+                            <constraint firstItem="X09-oE-vWX" firstAttribute="centerX" secondItem="1gr-mg-TkP" secondAttribute="centerX" id="lqc-ol-Ocg"/>
+                            <constraint firstItem="X09-oE-vWX" firstAttribute="centerY" secondItem="1gr-mg-TkP" secondAttribute="centerY" id="mA2-9k-iG6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sBZ-Pq-7um"/>
+                    </view>
+                    <connections>
+                        <segue destination="tBN-cN-Nx0" kind="showDetail" identifier="DrinkView" id="feY-44-yhO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lRf-fE-che" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1349" y="21"/>
+        </scene>
+        <!--Drink View-->
+        <scene sceneID="y9X-ba-Pdw">
+            <objects>
+                <viewController storyboardIdentifier="DrinkView" id="tBN-cN-Nx0" customClass="DrinkView" customModule="Homework_CommunicationPattern" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xEE-qm-iem">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Drink" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muK-mC-RxV">
+                                <rect key="frame" x="95" y="114" width="224.5" height="31.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="yUb-BM-gdr">
+                                <rect key="frame" x="97" y="283" width="220" height="330"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fG-A9-TUA">
+                                        <rect key="frame" x="0.0" y="0.0" width="220" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="220" id="Dg4-72-j9p"/>
+                                            <constraint firstAttribute="height" constant="150" id="uzi-as-6iH"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="cocacola"/>
+                                        <connections>
+                                            <action selector="cokeButtonTapped:" destination="tBN-cN-Nx0" eventType="touchUpInside" id="uHt-9f-bKn"/>
+                                            <segue destination="LBf-oy-pqU" kind="unwind" identifier="BaseView" unwindAction="unwindSegue:" id="Z3x-hG-YOL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDJ-wT-GSB">
+                                        <rect key="frame" x="0.0" y="180" width="220" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="06M-JF-BFT"/>
+                                            <constraint firstAttribute="height" constant="150" id="XSY-sx-LLX"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="fNB-S6-1UT"/>
+                                            <constraint firstAttribute="width" constant="220" id="kPZ-3e-oPj"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="pepsi"/>
+                                        <connections>
+                                            <action selector="pepsiButtonTapped:" destination="tBN-cN-Nx0" eventType="touchUpInside" id="tko-ed-wTR"/>
+                                            <segue destination="LBf-oy-pqU" kind="unwind" identifier="BaseView" unwindAction="unwindSegue:" id="Brf-xc-Mhg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yUb-BM-gdr" firstAttribute="centerX" secondItem="xEE-qm-iem" secondAttribute="centerX" id="8D9-JC-u35"/>
+                            <constraint firstItem="muK-mC-RxV" firstAttribute="centerX" secondItem="xEE-qm-iem" secondAttribute="centerX" id="Fgi-vh-yVL"/>
+                            <constraint firstItem="muK-mC-RxV" firstAttribute="top" secondItem="7J6-ZI-stw" secondAttribute="top" constant="70" id="GMh-C2-jhw"/>
+                            <constraint firstItem="yUb-BM-gdr" firstAttribute="centerY" secondItem="xEE-qm-iem" secondAttribute="centerY" id="Yve-wv-MBe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7J6-ZI-stw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rhN-rw-76M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="LBf-oy-pqU" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2093" y="21"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple1" width="355" height="355"/>
+        <image name="cocacola" width="598" height="336"/>
+        <image name="orange1" width="605" height="612"/>
+        <image name="pepsi" width="700" height="700"/>
+    </resources>
+</document>
